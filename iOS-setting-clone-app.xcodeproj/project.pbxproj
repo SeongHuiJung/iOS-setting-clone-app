@@ -13,6 +13,11 @@
 		576910FF2B7B3431000D9853 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 576910FD2B7B3431000D9853 /* Main.storyboard */; };
 		576911012B7B3432000D9853 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 576911002B7B3432000D9853 /* Assets.xcassets */; };
 		576911042B7B3432000D9853 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 576911022B7B3432000D9853 /* LaunchScreen.storyboard */; };
+		5769110D2B7B3BDF000D9853 /* PrifileViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5769110B2B7B3BDF000D9853 /* PrifileViewCell.swift */; };
+		5769110E2B7B3BDF000D9853 /* PrifileViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5769110C2B7B3BDF000D9853 /* PrifileViewCell.xib */; };
+		576911112B7B544D000D9853 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5769110F2B7B544D000D9853 /* MenuCell.swift */; };
+		576911122B7B544D000D9853 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 576911102B7B544D000D9853 /* MenuCell.xib */; };
+		576911142B7CC96A000D9853 /* SettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576911132B7CC96A000D9853 /* SettingModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		576911002B7B3432000D9853 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		576911032B7B3432000D9853 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		576911052B7B3432000D9853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5769110B2B7B3BDF000D9853 /* PrifileViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrifileViewCell.swift; sourceTree = "<group>"; };
+		5769110C2B7B3BDF000D9853 /* PrifileViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrifileViewCell.xib; sourceTree = "<group>"; };
+		5769110F2B7B544D000D9853 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		576911102B7B544D000D9853 /* MenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
+		576911132B7CC96A000D9853 /* SettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +69,15 @@
 				576910F72B7B3431000D9853 /* AppDelegate.swift */,
 				576910F92B7B3431000D9853 /* SceneDelegate.swift */,
 				576910FB2B7B3431000D9853 /* ViewController.swift */,
+				5769110F2B7B544D000D9853 /* MenuCell.swift */,
+				576911102B7B544D000D9853 /* MenuCell.xib */,
 				576910FD2B7B3431000D9853 /* Main.storyboard */,
 				576911002B7B3432000D9853 /* Assets.xcassets */,
 				576911022B7B3432000D9853 /* LaunchScreen.storyboard */,
 				576911052B7B3432000D9853 /* Info.plist */,
+				5769110B2B7B3BDF000D9853 /* PrifileViewCell.swift */,
+				5769110C2B7B3BDF000D9853 /* PrifileViewCell.xib */,
+				576911132B7CC96A000D9853 /* SettingModel.swift */,
 			);
 			path = "iOS-setting-clone-app";
 			sourceTree = "<group>";
@@ -127,6 +142,8 @@
 			files = (
 				576911042B7B3432000D9853 /* LaunchScreen.storyboard in Resources */,
 				576911012B7B3432000D9853 /* Assets.xcassets in Resources */,
+				576911122B7B544D000D9853 /* MenuCell.xib in Resources */,
+				5769110E2B7B3BDF000D9853 /* PrifileViewCell.xib in Resources */,
 				576910FF2B7B3431000D9853 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,7 +156,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				576910FC2B7B3431000D9853 /* ViewController.swift in Sources */,
+				576911112B7B544D000D9853 /* MenuCell.swift in Sources */,
+				576911142B7CC96A000D9853 /* SettingModel.swift in Sources */,
 				576910F82B7B3431000D9853 /* AppDelegate.swift in Sources */,
+				5769110D2B7B3BDF000D9853 /* PrifileViewCell.swift in Sources */,
 				576910FA2B7B3431000D9853 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
