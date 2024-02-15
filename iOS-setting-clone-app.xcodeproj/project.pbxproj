@@ -18,6 +18,8 @@
 		576911112B7B544D000D9853 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5769110F2B7B544D000D9853 /* MenuCell.swift */; };
 		576911122B7B544D000D9853 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 576911102B7B544D000D9853 /* MenuCell.xib */; };
 		576911142B7CC96A000D9853 /* SettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576911132B7CC96A000D9853 /* SettingModel.swift */; };
+		576BEBAD2B7E02A000236ECC /* GeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576BEBAC2B7E02A000236ECC /* GeneralViewController.swift */; };
+		576BEBAF2B7E02E500236ECC /* GeneralViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 576BEBAE2B7E02E500236ECC /* GeneralViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		5769110F2B7B544D000D9853 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		576911102B7B544D000D9853 /* MenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
 		576911132B7CC96A000D9853 /* SettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModel.swift; sourceTree = "<group>"; };
+		576BEBAC2B7E02A000236ECC /* GeneralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralViewController.swift; sourceTree = "<group>"; };
+		576BEBAE2B7E02E500236ECC /* GeneralViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GeneralViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 				5769110B2B7B3BDF000D9853 /* PrifileViewCell.swift */,
 				5769110C2B7B3BDF000D9853 /* PrifileViewCell.xib */,
 				576911132B7CC96A000D9853 /* SettingModel.swift */,
+				576BEBAC2B7E02A000236ECC /* GeneralViewController.swift */,
+				576BEBAE2B7E02E500236ECC /* GeneralViewController.storyboard */,
 			);
 			path = "iOS-setting-clone-app";
 			sourceTree = "<group>";
@@ -140,6 +146,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				576BEBAF2B7E02E500236ECC /* GeneralViewController.storyboard in Resources */,
 				576911042B7B3432000D9853 /* LaunchScreen.storyboard in Resources */,
 				576911012B7B3432000D9853 /* Assets.xcassets in Resources */,
 				576911122B7B544D000D9853 /* MenuCell.xib in Resources */,
@@ -156,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				576910FC2B7B3431000D9853 /* ViewController.swift in Sources */,
+				576BEBAD2B7E02A000236ECC /* GeneralViewController.swift in Sources */,
 				576911112B7B544D000D9853 /* MenuCell.swift in Sources */,
 				576911142B7CC96A000D9853 /* SettingModel.swift in Sources */,
 				576910F82B7B3431000D9853 /* AppDelegate.swift in Sources */,

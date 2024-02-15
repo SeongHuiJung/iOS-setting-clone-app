@@ -26,8 +26,20 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var settingTableView: UITableView!
     
+    //화면 보여질때마다 실행
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        //스크롤 내렸을 때 스크롤 제목이 위에 고정되게
+        //navigationController은 한번 설정 해두면 다른 vc 가도 계속 유지됨
+        //그래서 메인vc->다른vc 로 갔을때 메인과 다른 이 컨트롤러 설정이 다르다면 매번 화면 킬때마다 컨트롤러를 다시 설정해줘야함
+        //다른vc 같은 경우는 계속 화면을 키게 되니까 viewDidLoad 에 해도 무관한데 메인vc 같은 경우는 viewDidLoad를 처음 앱 킬때 메모리를 불러오면서 한번 실행되기에 viewWillAppear 에서 실행함
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.backgroundColor = UIColor(white: 245/255, alpha: 1)
         
         //++ 해당 작업을 하는 이유 찾아보기
         settingTableView.delegate=self
@@ -44,6 +56,10 @@ class ViewController: UIViewController {
         settingTableView.backgroundColor = UIColor(white: 245/255, alpha: 1)
         
         makeData()
+        
+        //네비게이션 바 타이틀 제목넣기
+        self.title = "Setting"
+        
     }
 }
 
@@ -56,6 +72,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         return settingModel[section].count
     }
     
+    //섹션 수 리턴
     func numberOfSections(in tableView: UITableView) -> Int {
         settingModel.count
     }
@@ -92,11 +109,29 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     */
     
+    //cell height 조정
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if(indexPath.section == 0){
             //기본값 그대로 출력하겠다는 의미
             return UITableView.automaticDimension
         }
         return 60
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //섹션 1 에서의 0 번째 row cell 을 누를 경우
+        if indexPath.section == 1 && indexPath.row == 0 {
+            //UIStoryboard -> name 이름의 스토리보드에서
+            //instantiateViewController -> withIdentifier 이름을 가진 vc 를 가져오라는 의미
+            if let generalVC = UIStoryboard(name: "GeneralViewController", bundle: nil).instantiateViewController(withIdentifier: "GeneralViewController") as? GeneralViewController {
+                //현재 navigation view controller 기반임
+                //그렇다면 눌렀을때 이동하는것을 내비게이션 이동을 할 수 있는 형태를 받을 수 있음
+                //눌렀을때 generalVC로 이동하겠다는 의미임
+                print("클릭")
+                self.navigationController?.pushViewController(generalVC, animated: true)
+            }
+            //as? -> 타입 캐스팅 가능할시 캐스팅 하겠다
+            //as! -> 타입 캐스팅 강제로 실행
+        }
     }
 }
