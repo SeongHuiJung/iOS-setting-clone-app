@@ -119,6 +119,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // cell 한번 클릭하면 누른 표시가 그대로 유지 되기 때문에 누르고 바로 사라지게 하는 코드가 따로 필요함
+        tableView.deselectRow(at: indexPath, animated: true)
+        
         //섹션 1 에서의 0 번째 row cell 을 누를 경우
         if indexPath.section == 1 && indexPath.row == 0 {
             //UIStoryboard -> name 이름의 스토리보드에서
@@ -133,5 +136,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             //as? -> 타입 캐스팅 가능할시 캐스팅 하겠다
             //as! -> 타입 캐스팅 강제로 실행
         }
-    }
+        else if indexPath.section == 1 && indexPath.row == 1 {
+            let myidVC = MyIDViewController(nibName: "MyIDViewController", bundle: nil)
+            self.present(myidVC, animated: true)
+            }
+        }
 }
+

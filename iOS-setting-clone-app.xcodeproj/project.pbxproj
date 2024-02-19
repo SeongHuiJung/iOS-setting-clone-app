@@ -20,6 +20,8 @@
 		576911142B7CC96A000D9853 /* SettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576911132B7CC96A000D9853 /* SettingModel.swift */; };
 		576BEBAD2B7E02A000236ECC /* GeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576BEBAC2B7E02A000236ECC /* GeneralViewController.swift */; };
 		576BEBAF2B7E02E500236ECC /* GeneralViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 576BEBAE2B7E02E500236ECC /* GeneralViewController.storyboard */; };
+		576BEBB22B7E58A700236ECC /* MyIDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576BEBB02B7E58A700236ECC /* MyIDViewController.swift */; };
+		576BEBB32B7E58A700236ECC /* MyIDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 576BEBB12B7E58A700236ECC /* MyIDViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		576911132B7CC96A000D9853 /* SettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModel.swift; sourceTree = "<group>"; };
 		576BEBAC2B7E02A000236ECC /* GeneralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralViewController.swift; sourceTree = "<group>"; };
 		576BEBAE2B7E02E500236ECC /* GeneralViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GeneralViewController.storyboard; sourceTree = "<group>"; };
+		576BEBB02B7E58A700236ECC /* MyIDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyIDViewController.swift; sourceTree = "<group>"; };
+		576BEBB12B7E58A700236ECC /* MyIDViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyIDViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,8 @@
 				576911132B7CC96A000D9853 /* SettingModel.swift */,
 				576BEBAC2B7E02A000236ECC /* GeneralViewController.swift */,
 				576BEBAE2B7E02E500236ECC /* GeneralViewController.storyboard */,
+				576BEBB02B7E58A700236ECC /* MyIDViewController.swift */,
+				576BEBB12B7E58A700236ECC /* MyIDViewController.xib */,
 			);
 			path = "iOS-setting-clone-app";
 			sourceTree = "<group>";
@@ -150,6 +156,7 @@
 				576911042B7B3432000D9853 /* LaunchScreen.storyboard in Resources */,
 				576911012B7B3432000D9853 /* Assets.xcassets in Resources */,
 				576911122B7B544D000D9853 /* MenuCell.xib in Resources */,
+				576BEBB32B7E58A700236ECC /* MyIDViewController.xib in Resources */,
 				5769110E2B7B3BDF000D9853 /* PrifileViewCell.xib in Resources */,
 				576910FF2B7B3431000D9853 /* Main.storyboard in Resources */,
 			);
@@ -167,6 +174,7 @@
 				576911112B7B544D000D9853 /* MenuCell.swift in Sources */,
 				576911142B7CC96A000D9853 /* SettingModel.swift in Sources */,
 				576910F82B7B3431000D9853 /* AppDelegate.swift in Sources */,
+				576BEBB22B7E58A700236ECC /* MyIDViewController.swift in Sources */,
 				5769110D2B7B3BDF000D9853 /* PrifileViewCell.swift in Sources */,
 				576910FA2B7B3431000D9853 /* SceneDelegate.swift in Sources */,
 			);
